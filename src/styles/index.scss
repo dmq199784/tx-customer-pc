@@ -1,0 +1,175 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+//flex布局常用样式
+.flex{
+  display: flex;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+.flex-middle{
+  display: flex;
+  align-content: center;
+}
+.flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-middle-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.space-between{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+
+.ofh{
+  overflow: hidden;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.center{
+  text-align: center;
+}
+.span{
+  display: block;
+  height: 24px;
+}
+.space{
+  display: block;
+  height: 6px;
+}
+.v-space {
+  display: inline-block;
+  width: 6px;
+}
+.v-span{
+  display: inline-block;
+  width: 24px;
+}
+
+/*字重*/
+.bold   {font-weight: bold}
+.bolder {font-weight: bolder}
+/*字体大小*/
+.nano     {font-size: 8px}
+.mini     {font-size: 10px}
+.smaller  {font-size: 12px}
+.small    {font-size: 14px}
+.big      {font-size: 18}
+.bigger   {font-size: 22px}
+.large    {font-size: 28px}
+/*背景色彩*/
+.color-primary  {background-color: #49b3fa}
+.color-success  {background-color: #67C23A}
+.color-danger   {background-color: #f56c6c}
+.color-info     {background-color: #abb2bb}
+/*字体颜色*/
+.text-color-primary {color: #49b3fa}
+.text-color-success {color: #67C23A}
+.text-color-danger  {color: #f56c6c}
+.text-color-info    {color: #abb2bb}
+
+
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ccc;
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #e6e6e6;
+}
+.v-space {
+  display: inline-block;
+  width: 6px;
+}
